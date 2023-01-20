@@ -1,3 +1,6 @@
+*{
+  box-sizing: border-box;
+}
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
@@ -10,4 +13,77 @@ body {
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+.container{
+  width: 385px;
+  height:auto 450px;
+  border: 2px solid rgb(8, 178, 230);
+  border-radius: 4px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.h1title{
+  display: inline-block;
+  margin: 20px 50px 30px 20px;
+  font-size: 25px;
+  color: rgb(8, 178, 230);
+}
+button{
+  width: 60px ;
+  height: 30px;
+  background-color: black;
+  color: white;
+  cursor: pointer;
+  border-radius: 4px;
+}
+input{
+  width: 335px;
+  height: 35px;
+  margin:0 0 15px 25px;
+  border: 2px solid rgb(8, 178, 230);
+  border-radius: 4px;
+}
+.inputtext{
+  outline: none;
+  text-align: center;
+  font-size: 15px;
+ 
+}
+.inputsave{
+  font-size: 20px;
+  color: white;
+  background-color:rgb(8, 178, 230) ;
+  transition:  0.9s ;
+}
+.inputsave:hover{
+  background-color: transparent;
+  color: rgb(8, 178, 230);
+}
+hr{
+  width: 335px;
+  margin: 10px 0 10px  25px;
+  border: 1px solid rgb(8, 178, 230) ;
+}
+ul{
+  height: 220px ;
+  overflow: scroll;
+  margin-bottom: 10px;
+}
+::-webkit-scrollbar{
+  display: none;
+}
+
+li{
+  width: 335px;
+  height: 40px;
+  padding-left: 4px;
+  border-radius: 4px;
+  line-height: 40px;
+  margin:20px 0 15px -20px;
+  color: white;
+  list-style: none;
+ 
+  background-color:rgb(8, 178, 230) ;
 }
