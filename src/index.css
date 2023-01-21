@@ -8,6 +8,7 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  
 }
 
 code {
@@ -70,6 +71,7 @@ ul{
   height: 220px ;
   overflow: scroll;
   margin-bottom: 10px;
+  
 }
 ::-webkit-scrollbar{
   display: none;
@@ -86,4 +88,20 @@ li{
   list-style: none;
  
   background-color:rgb(8, 178, 230) ;
+}
+.fa-margin{
+  margin-right:0.3rem;
+  
+  
+}
+.message{
+  width: fit-content;
+  height: 35px;
+  padding: 9px;
+  color: white;
+  background-color:rgb(8, 178, 230) ;
+  margin: auto;
+  border-radius: 4px;
+  
+  margin-bottom: 1rem;
 }
