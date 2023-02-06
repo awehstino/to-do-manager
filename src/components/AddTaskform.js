@@ -1,17 +1,17 @@
 import { useState } from "react"
 
 const AddTaskform = ({onadd}) => {
-    const [task, setAddtask] = useState("")
+    const [text, setAddtask] = useState("")
     function handlechange(e){
        setAddtask(e.target.value)
     }
     const onSubmit =(e) =>{
        e.preventDefault();
-       if (!task){
+       if (!text){
         
         return
        }
-       onadd(task)
+       onadd({text})
        
        setAddtask("")
        
@@ -20,7 +20,7 @@ const AddTaskform = ({onadd}) => {
    
   return (
     <form onSubmit={onSubmit}>
-        <input type="text" name="" value={task} id="" className="inputtext" onChange={handlechange} />
+        <input type="text"  value={text} id="" className="inputtext" onChange={handlechange} />
         <input type="submit" value="saves"  className="inputsave"/>
 
     </form>
